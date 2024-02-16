@@ -1,5 +1,5 @@
 {% set name = "ast-grep" %}
-{% set version = "0.18.0" %}
+{% set version = "0.19.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/{{ name }}/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: a1021a96fe778fcce7e600727e862b1b37f51031bad9f85d5d99c7f1aef2ffda
+  sha256: 6d6c1c6a1b45f128c1954b5b5d98ce9c16760e2f4aae607aa1a439a04462f604
   patches:
     # ast-grep 0.18.0 pins to tree-sitter-cpp 0.22.3
     # which fails to build in the standard conda-forge environment
