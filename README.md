@@ -182,4 +182,5 @@ Feedstock Maintainers
 =====================
 
 * [@asford](https://github.com/asford/)
+* [@moritzwilksch](https://github.com/moritzwilksch/)
 
