@@ -10,7 +10,7 @@ source:
   sha256: 34f9afd3f1916c30ace514ff2aafe8c3a8e0d71afc3fd36638808e89e280b0c9
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 requirements:
@@ -36,7 +36,6 @@ about:
     letters as wildcard, e.g. $MATCH, to match any single AST node. Think it as
     REGEX dot ., except it is not textual.
   license: MIT
-  license_family: MIT
   license_file:
     - THIRDPARTY.yml
     - LICENSE
@@ -46,4 +45,5 @@ about:
 extra:
   recipe-maintainers:
     - asford
+    - danielnachun
     - moritzwilksch
