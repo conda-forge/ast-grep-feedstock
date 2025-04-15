@@ -8,5 +8,3 @@ export CFLAGS="${CFLAGS} -D_BSD_SOURCE"
 
 cargo install --bins --no-track --verbose --locked --root ${PREFIX} --path ./crates/cli
 cargo-bundle-licenses --format yaml --output THIRDPARTY.yml
-
-ln -s ${PREFIX}/bin/ast-grep ${PREFIX}/bin/sg
