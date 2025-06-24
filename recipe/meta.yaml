@@ -1,5 +1,5 @@
 {% set name = "ast-grep" %}
-{% set version = "0.38.5" %}
+{% set version = "0.38.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/{{ name }}/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: c02d534ca2ae22874675ce72ed694600059b68396e636ec653f19a581bd7972b
+  sha256: 57191fc73ffff106edbd5bd47762042227c3544d08f31e033a4b93cdc08f4844
 
 build:
   number: 0
