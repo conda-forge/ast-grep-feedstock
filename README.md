@@ -20,7 +20,6 @@ that has the same syntactical structure. You can use $ sign + upper case
 letters as wildcard, e.g. $MATCH, to match any single AST node. Think it as
 REGEX dot ., except it is not textual.
 
-
 Current build status
 ====================
 
