@@ -1,33 +1,34 @@
-{% set name = "ast-grep" %}
-{% set version = "0.40.0" %}
+schema_version: 1
+
+context:
+  version: 0.40.0
 
 package:
-  name: {{ name|lower }}
-  version: {{ version }}
+  name: ast-grep
+  version: ${{ version }}
 
 source:
-  url: https://github.com/{{ name }}/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
+  url: https://github.com/ast-grep/ast-grep/archive/refs/tags/${{ version }}.tar.gz
   sha256: 575d9c71ade98d6fb883a444a8b490ea7d0faca5bd09228c9cb2250e7276fbb6
 
 build:
-  number: 0
-  skip: true  # [win]
+  number: 1
+  skip: win
 
 requirements:
   build:
-    - {{ compiler('cxx') }}
-    - {{ compiler('rust') }}
-    - {{ stdlib("c") }}
+    - ${{ compiler('cxx') }}
+    - ${{ compiler('rust') }}
+    - ${{ stdlib("c") }}
     - cargo-bundle-licenses
 
-test:
-  commands:
-    - sg --version
-    - ast-grep --version
+tests:
+  - script:
+      - sg --version
+      - ast-grep --version
 
 about:
-  home: https://github.com/ast-grep/ast-grep
-  summary: 'ast-grep(sg) is a CLI tool for code structural search, lint, and rewriting.'
+  summary: ast-grep(sg) is a CLI tool for code structural search, lint, and rewriting.
   description: |
     ast-grep is an AST-based tool to search code by pattern code. Think it as
     your old-friend grep but it matches AST nodes instead of text. You can
@@ -39,8 +40,9 @@ about:
   license_file:
     - THIRDPARTY.yml
     - LICENSE
-  doc_url: https://ast-grep.github.io/
-  dev_url: https://github.com/ast-grep/ast-grep
+  homepage: https://github.com/ast-grep/ast-grep
+  repository: https://github.com/ast-grep/ast-grep
+  documentation: https://ast-grep.github.io/
 
 extra:
   recipe-maintainers:
