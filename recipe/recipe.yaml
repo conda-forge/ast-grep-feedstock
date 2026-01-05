@@ -13,7 +13,7 @@ source:
 
 build:
   number: 0
-  skip: win
+  skip: ppc64le or win
 
 requirements:
   build:
