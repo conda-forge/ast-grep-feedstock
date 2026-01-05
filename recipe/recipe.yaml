@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.40.3"
+  version: "0.40.4"
 
 package:
   name: ast-grep
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/ast-grep/ast-grep/archive/refs/tags/${{ version }}.tar.gz
-  sha256: b6a3a59b6298d30f67bdb195279e66c70615646d1066815e643d9600c6aa3200
+  sha256: a0402d5200437cb506d5176470bcd035497f152c292c5f7c93c6e70029531357
 
 build:
   number: 0
